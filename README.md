@@ -19,7 +19,7 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
 - YouTube: https://www.youtube.com/watch?v=vAEZvYlUnEM
 - 논문: https://doi.org/10.3390/app11072981
 
-# 필요한 부품(어레이 1개 기준)
+> # 필요한 부품(어레이 1개 기준)
 |구매 사이트|부품명|최소 개수|Link|
 |:----|:----|:----|----|
 |Alibaba|지름 1cm 초음파 발생기(트랜스듀서)|256|[Link](https://manorshi.en.alibaba.com/product/60248714908-801018150/10mm_40khz_piezo_ultrasonic_Transmitter_Receiver_sensor.html?spm=a2700.8304367.rect38f22d.1.2a14fee7WhfcRq)|
