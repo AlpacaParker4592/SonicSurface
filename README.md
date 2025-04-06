@@ -49,3 +49,4 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
 |(약국 등)|이소프로필 알코올+주사기|500mL 이상||
 ||목재 합판|2||
 ||지지대용 철제 구조물|||
+||발포 스티로폼 파티클|||
