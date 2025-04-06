@@ -3,23 +3,23 @@
 
 Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
 
-# 레포지토리 내 폴더 설명
+## 레포지토리 내 폴더 설명
 - Algorithms - Phase Delay 패턴 생성 알고리즘
 - ControlSoftware - 공중부양, 촉각 피드백(또는 소리 구현) 예시 구현 코드(Python)
 - Electronics - PCB gerber 파일
 - Firmware - FPGA 보드에 업로드할 코드
 - Mech - 스페이서(Spacer), 지지대 등 3D 프린팅하거나 레이저 커팅할 보조 파츠
 
-# 어레이 조립 절차 및 팁
+## 어레이 조립 절차 및 팁
 - 한국어 번역본 작성 예정([본 레포지토리 내 Wiki](https://github.com/AlpacaParker4592/SonicSurface/wiki) 참조)
 - 현재는 아래의 조립 절차 참고 요망
 
-# 어레이 조립 절차(원문)
+## 어레이 조립 절차(원문)
 - Instructables: https://www.instructables.com/SonicSurface-Phased-array-for-Levitation-Mid-air-T/
 - YouTube: https://www.youtube.com/watch?v=vAEZvYlUnEM
 - 논문: https://doi.org/10.3390/app11072981
 
-# 필요한 부품(어레이 1개 기준)
+## 필요한 부품(어레이 1개 기준)
 <details>
   <summary>
     펼치기/접기
@@ -45,7 +45,7 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
   |(3D 프린터 또는 레이저 커팅기 사용)|스페이서|1|([레포지토리 내 파일](https://github.com/upnalab/SonicSurface/tree/main/Mech/spacer) 참조)|
 </details>
 
-# 권장 부품 및 도구
+## 권장 부품 및 도구
 <details>
   <summary>펼치기/접기</summary>
   <br>
