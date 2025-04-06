@@ -32,7 +32,7 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
 ||0.1uf 캐퍼시터|168|[Link](https://www.digikey.kr/ko/products/detail/yageo/CC0805KRX7R9BB104/302874)|
 ||전선(수/수)|(필요한 만큼)|[Link](https://www.digikey.kr/ko/products/detail/sparkfun-electronics/PRT-12795/5993860)|
 ||전선(암/수)|(필요한 만큼)|[Link](https://www.digikey.kr/ko/products/detail/sparkfun-electronics/PRT-12794/5993859)|
-|JLCPCB|PCB 기판|3|[Link](https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=97627eda783a46f08d177d4509fd49e5&businessType=example&fileNameSonicSurface1.2_2Layers_183x169.zip)|
+|JLCPCB|PCB 기판+스텐실 철판|3|[Link](https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=97627eda783a46f08d177d4509fd49e5&businessType=example&fileNameSonicSurface1.2_2Layers_183x169.zip)|
 |Amazon|FPGA 프로그래머|(만들려는 어레이 개수 상관없이 1개)|[Link](https://www.amazon.es/Waveshare-Download-Programming-Programmer-Debugger/dp/B00ID9BAUY/ref=sr_1_1?dib=eyJ2IjoiMSJ9.pJ6KQmrP2LctrOz-kMSqMXXfA4ov--utB485fOiAPyQ.MuUf_b9A_a2vgSnp4dbgAUGR5UO1FjtJPPbTX2heyuQ&dib_tag=se&keywords=Blaster+USB+ALTERA&qid=1715358515&sr=8-1)|
 
 # 권장 부품 및 도구
@@ -49,4 +49,5 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
 |(약국 등)|이소프로필 알코올+주사기|500mL 이상||
 ||(목재, 두꺼운 종이 등) 합판|2|(Instructable 제작 후기 참고)|
 ||지지대용 철제 구조물||(Instructable 제작 후기 참고)|
+||기판 고정용 볼트 및 너트|||
 ||발포 스티로폼 파티클|||
