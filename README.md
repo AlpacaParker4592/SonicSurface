@@ -12,7 +12,7 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
 
 # 어레이 조립 절차 및 팁
 - 한국어 번역본 작성 예정([본 레포지토리 내 Wiki](https://github.com/AlpacaParker4592/SonicSurface/wiki) 참조)
-- 현재는 아래의 원분 조립 절차 참고 요망
+- 현재는 아래의 조립 절차 참고 요망
 
 # 어레이 조립 절차(원문)
 - Instructables: https://www.instructables.com/SonicSurface-Phased-array-for-Levitation-Mid-air-T/
