@@ -46,6 +46,6 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
 ||납땜용 열풍기|||
 ||납땜 잔여물 제거용 솔|||
 |(다이소 등)|전자부품용 족집게|||
-|(약국 등)|이소프로필 알코올|500mL 이상||
+|(약국 등)|이소프로필 알코올+주사기|500mL 이상||
 ||목재 합판|2||
 ||지지대용 철제 구조물|||
