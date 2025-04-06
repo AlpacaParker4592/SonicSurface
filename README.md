@@ -47,6 +47,6 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
 ||납땜 잔여물 제거용 솔|||
 |(다이소 등)|전자부품용 족집게|||
 |(약국 등)|이소프로필 알코올+주사기|500mL 이상||
-||목재 합판|2||
-||지지대용 철제 구조물|||
+||(목재, 두꺼운 종이 등) 합판|2|(Instructable 제작 후기 참고)|
+||지지대용 철제 구조물||(Instructable 제작 후기 참고)|
 ||발포 스티로폼 파티클|||
