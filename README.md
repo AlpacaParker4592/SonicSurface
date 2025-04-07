@@ -26,7 +26,7 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
   </summary>
   <br>
   
-  |구매 사이트|부품명|최소 개수|Link|
+  |구매 사이트|부품명|최소 개수|(예시) Link|
   |:----|:----|:----|----|
   |Alibaba|지름 1cm 초음파 발생기(트랜스듀서)|256|[Link](https://manorshi.en.alibaba.com/product/60248714908-801018150/10mm_40khz_piezo_ultrasonic_Transmitter_Receiver_sensor.html?spm=a2700.8304367.rect38f22d.1.2a14fee7WhfcRq)|
   |Digikey|솔더 페이스트|1|[Link](https://www.digikey.kr/ko/products/detail/chip-quik-inc/NC191LT10/11480389)|
@@ -50,7 +50,7 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
   <summary>펼치기/접기</summary>
   <br>
   
-  |구매 사이|부품명|최소 개수|Link|
+  |구매 사이|부품명|최소 개수|(예시) Link|
   |----|----|----|----|
   ||솔더 페이스트 전용 스패출러(스프레더)|||
   ||기판 납땜용 리플로우 오븐|||
