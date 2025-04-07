@@ -43,6 +43,11 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
   |JLCPCB|PCB 기판+스텐실 철판|3|[Link](https://cart.jlcpcb.com/quote?orderType=1&homeUploadNum=97627eda783a46f08d177d4509fd49e5&businessType=example&fileNameSonicSurface1.2_2Layers_183x169.zip)|
   |Amazon|FPGA 프로그래머|(만들려는 어레이 개수 상관없이 1개)|[Link](https://www.amazon.es/Waveshare-Download-Programming-Programmer-Debugger/dp/B00ID9BAUY/ref=sr_1_1?dib=eyJ2IjoiMSJ9.pJ6KQmrP2LctrOz-kMSqMXXfA4ov--utB485fOiAPyQ.MuUf_b9A_a2vgSnp4dbgAUGR5UO1FjtJPPbTX2heyuQ&dib_tag=se&keywords=Blaster+USB+ALTERA&qid=1715358515&sr=8-1)|
   |(3D 프린터 또는 레이저 커팅기 사용)|스페이서|1|([레포지토리 내 파일](https://github.com/upnalab/SonicSurface/tree/main/Mech/spacer) 참조)|
+  ||납땜용 실납|||
+  ||납땜용 인두|||
+  ||기판 납땜용 리플로우 오븐|||
+  ||솔더 페이스트 전용 스패출러(스프레더)|||
+  ||발포 스티로폼 파티클|||
 </details>
 
 ## 권장 부품 및 도구
@@ -52,10 +57,6 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
   
   |구매 사이|부품명|최소 개수|(예시) Link|
   |----|----|----|----|
-  ||솔더 페이스트 전용 스패출러(스프레더)|||
-  ||기판 납땜용 리플로우 오븐|||
-  ||납땜용 실납|||
-  ||납땜용 인두|||
   ||납땜용 열풍기|||
   ||납땜 잔여물 제거용 브러시|||
   |Digikey|솔더윅|0(4개 권장)|[Link](https://www.digikey.kr/short/2mwb35n2)|
@@ -64,5 +65,4 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
   |(합판 구매 후 가공 또는 레이저 커팅기 사용)|(목재 등) 합판|2|(Instructable 제작 후기 참고)|
   ||지지대용 철제 구조물||(Instructable 제작 후기 참고)|
   ||기판 고정용 볼트 및 너트|||
-  ||발포 스티로폼 파티클|||
 </details>
