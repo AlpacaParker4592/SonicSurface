@@ -5,7 +5,7 @@ import numpy as np
 array = SonicSurface()
 array.connect( -1 )
 
-dist = 0.18
+dist = 0.1  # y
 IMG_SIZE = 640
 
 needsArrayUpdate = True
@@ -24,8 +24,7 @@ def onClickAddCircle(event, x, y, flags, param):
         cv2.EVENT_MBUTTONDOWN: 2,
     }
     index = eventToIndex.get(event, -1)
-    if index == -1:
-        return
+    if index == -1: return
     
     positions[index][0] = x
     positions[index][1] = y
@@ -88,5 +87,5 @@ while True:
     if key == ord('q') or key == 27:
         break
     
-array.disconnect();
+array.disconnect()
 cv2.destroyAllWindows()
