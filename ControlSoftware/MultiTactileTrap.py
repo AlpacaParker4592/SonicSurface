@@ -16,6 +16,11 @@ TIME_PER_POS = 0.1
 WAIT_SWITCH = 1.0 / MOD_FREQ / 2
 N_SWITCHES = int(TIME_PER_POS / WAIT_SWITCH)
 
+STEERING_SPEED = 0.5 * (np.pi/180) 
+
+direction = 1  # 1 for increasing, -1 for decreasing
+angle = 0
+
 def active_wait(seconds):
     start = time.perf_counter()  # Get the precise start time
     while time.perf_counter() - start < seconds: pass  # Busy-wait loop (uses CPU but is accurate)
@@ -53,10 +58,15 @@ try:
             time.sleep(0.1)
         
         positions = Brailles.slicePosition(brailles,start_idx)
+        positions = [[0.4*np.sin(angle)*pos[0],pos[1]] for pos in positions]
         sendPoints(array, positions, DIST, True)
 
         array.switchOnOrOff(False)
         
+        angle += direction * STEERING_SPEED
+
+
+
         for _ in range(N_SWITCHES): #swap quickly between the last two send phases (focus and off) that creates modulation
             array.sendCommit()
             #time.sleep(WAIT_SWITCH)
