@@ -18,7 +18,7 @@ N_SWITCHES = int(TIME_PER_POS / WAIT_SWITCH)
 
 STEERING_SPEED = 0.5 * (np.pi/180) 
 
-direction = 1  # 1 for increasing, -1 for decreasing
+direction = 1  # 1 for text order increasing, -1 for decreasing
 angle = 0
 
 def active_wait(seconds):
