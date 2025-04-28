@@ -58,7 +58,7 @@ try:
             time.sleep(0.1)
         
         positions = Brailles.slicePosition(brailles,start_idx)
-        positions = [[0.4*np.sin(angle)*pos[0],pos[1]] for pos in positions]
+        positions = [[0.005*np.sin(angle)+pos[0],pos[1]] for pos in positions]
         sendPoints(array, positions, DIST, True)
 
         array.switchOnOrOff(False)
