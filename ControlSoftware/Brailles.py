@@ -104,7 +104,6 @@ def slicePosition(brailles: list,initial_start_idx:int) -> list:
     return positions
 
 
-
 if __name__ == "__main__":
     import time
     import keyboard
@@ -122,8 +121,8 @@ if __name__ == "__main__":
     print("Return: {}".format(slicePosition(brailles,start_idx)))
     printPosition(brailles,start_idx,end_idx)
 
-    try:
-        while True:
+    while True:
+        try:
             is_right_pressed = keyboard.is_pressed('right') or keyboard.is_pressed('d')
             is_left_pressed = keyboard.is_pressed('left') or keyboard.is_pressed('a')
             if is_right_pressed or is_left_pressed:
@@ -135,4 +134,6 @@ if __name__ == "__main__":
                 printPosition(brailles,start_idx,end_idx)
                 time.sleep(0.1)
             
-    except KeyboardInterrupt: print("Disconnect")
+        except KeyboardInterrupt: 
+            break
+    print("Disconnect")
