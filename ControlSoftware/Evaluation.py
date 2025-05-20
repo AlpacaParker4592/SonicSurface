@@ -62,7 +62,7 @@ def question(brailles):
     print("\nBraille Table")
     sampleBrailles = list("⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿")
     for i in range(len(sampleBrailles)):
-        print("{0:2d}: {1}".format(i, sampleBrailles[i]), end="  ")
+        print("{0:2d}:|{1}|".format(i, sampleBrailles[i]), end="  ")
         if i != 0 and i % 16 == 15: print("")
     print("=============")
     
