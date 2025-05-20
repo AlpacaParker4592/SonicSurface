@@ -9,7 +9,7 @@ import numpy as np
 array = SonicSurface()
 array.connect( -1 )
    
-DIST = 5 #focus at 5 meters, it is almost equivalent to beam stearing
+DIST = 0.1 #focus at 5 meters, it is almost equivalent to beam stearing
 #put 0.12 to focus at 12cm and feel the focal point with your hand
 
 ANGLE_MAX = 20 * (np.pi/180)
@@ -32,9 +32,9 @@ angle = 0
 
 try:
     while True:
-        x = 0
-        y = DIST * np.cos(angle)
-        z = DIST * np.sin(angle)  
+        x = 0.05 * np.cos(angle)
+        y = DIST
+        z = 0.05 * np.sin(angle)  
         
         array.focusAtPos(x,y,z)
         array.switchOnOrOff(False)

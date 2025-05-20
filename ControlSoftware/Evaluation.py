@@ -16,7 +16,7 @@ TIME_PER_POS = 0.1
 WAIT_SWITCH = 1.0 / MOD_FREQ / 2
 N_SWITCHES = int(TIME_PER_POS / WAIT_SWITCH)
 
-STEERING_SPEED = 0.5 * (np.pi/180) 
+STEERING_SPEED = (15 * 2 *np.pi) / WAIT_SWITCH  # 15Hz * 2pi / WAIT_SWITCH(waiting time)
 
 direction = 1  # 1 for text order increasing, -1 for decreasing
 angle = 0
@@ -41,18 +41,48 @@ def sendPoints(array, positions, distance, useIBP=True):
     elif useIBP: array.multiFocusIBP(points)
     else: array.multiFocusChecker(points)
     
+def sendOnePoint(array, position, useIBP=True):
+    points = np.zeros([1, 3])
+    points[0,0] = (position[0] - 8) * 0.01  # x
+    points[0,1] = position[1]  # y
+    points[0,2] = (position[2]) * 0.01  # z
+    #print(points)
+    
+    if useIBP: array.multiFocusIBP(points)
+    else: array.multiFocusChecker(points)
+
 
 def question(brailles):
     start_time = time.time()
     idx = 0
-    angle = 0
     positionsByBraille = Brailles.slicePosition(brailles,0)
-    positionsToFocus = [[0.005*np.sin(angle)+pos[0],DIST,pos[1]] for pos in positionsByBraille]  #[[x1,y1,z1], ... ]
+    positionsToFocus = [[pos[0] * 0.01,DIST,pos[1] * 0.01] for pos in positionsByBraille]  #[[x1,y1,z1], ... ]
 
-    print("Write 3 answers by number (i.e. 23 34 40).\nPlease just press enter if you did not figure out: ")
+    #positionsToFocus = [positionsToFocus[3]]
+    print("\nBraille Table")
+    sampleBrailles = list("⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿")
+    for i in range(len(sampleBrailles)):
+        print("{0:2d}: {1}".format(i, sampleBrailles[i]), end="  ")
+        if i != 0 and i % 16 == 15: print("")
+    print("=============")
+    
+    print("Please press ESC button when you figure out.")
+    
     while True:
-        if not keyboard.is_pressed('enter'):
-            SonicSurface.focusAtPos(positionsToFocus[idx])
+        positionsToFocus = [[pos[0],DIST,pos[2]] for pos in positionsToFocus]  #[[x1,y1,z1], ... ]
+        is_enter_pressed = False
+        
+        angle = 0
+        while not is_enter_pressed:
+            if keyboard.is_pressed('esc'):
+                is_enter_pressed = True
+                break
+            
+            x = positionsToFocus[idx][0]
+            y = positionsToFocus[idx][1]
+            z = positionsToFocus[idx][2] + 0.005 * np.sin(angle)
+            #print(x, y, z)
+            array.focusAtPos(x,y,z)
             array.switchOnOrOff(False)
 
             for _ in range(N_SWITCHES): #swap quickly between the last two send phases (focus and off) that creates modulation
@@ -61,17 +91,20 @@ def question(brailles):
                 active_wait(WAIT_SWITCH)
 
             idx = (idx+1) % len(positionsToFocus)
-            if idx == 0: angle += direction * STEERING_SPEED
-            continue
+            if idx == 0: angle += STEERING_SPEED
         
         time.sleep(0.1)
-        array.disconnect()
+        array.switchOnOrOff(False)
         input_answer = input("Write 3 answers by number (i.e. 23 34 40).\nPlease just press enter if you did not figure out: ")
 
         if input_answer == "":
-            array.connect( -1 )
+            array.switchOnOrOff(True)
+            is_enter_pressed = False
             continue
-        answer = list(map(int,input_answer.split()))[:3]
+        
+        answer = list(map(int,input_answer.split()))
+        while len(answer) < 3: answer.append(-1)
+        if len(answer) > 3: answer = answer[:3]
         break
 
     end_time = time.time()
@@ -84,18 +117,23 @@ if __name__ == "__main__":
     array.connect( -1 )
     data = []  # [정답, 사용자 제공 답안, 걸린 시간] 별 리스트
 
-    sampleBrailles = list("⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿")[1:]
+    print("Tutorial")
+    print("This brailles means ⠿ ⠿ ⠿.\nFeel the haptic sensation and input the number of braille type.\n")
+    question(list("⠿⠿⠿"))
+
+
+    sampleBrailles = list("⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿")
     braillesIdx = [i for i in range(len(sampleBrailles))]
     random.shuffle(braillesIdx)
-    
-    print("Braille Table")
+
+    print("\nBraille Table")
     for i in range(len(sampleBrailles)):
         print("{0:2d}: {1}".format(i, sampleBrailles[i]), end="  ")
-        if i != 0 and i % 8 == 0: print("")
+        if i != 0 and i % 16 == 15: print("")
     print("=============")
 
     for i in range(0, len(sampleBrailles), 3):
-        print("Problem {0}-{1}.".format(i+1, min(i+3,len(braillesIdx))))
+        print("\nProblem {0}-{1}.".format(i+1, min(i+3,len(braillesIdx))))
         braillesForQuestion = [sampleBrailles[i] for i in braillesIdx[i:min(i+3,len(braillesIdx))]]
         answer, elapsed_time = question(braillesForQuestion)
         right_answer = braillesIdx[i:min(i+3,len(braillesIdx))]
@@ -120,4 +158,5 @@ if __name__ == "__main__":
     print("Elapsed time:")
     for d in data:
         print("{}s".format(round(d[2],4)), end="  ")
-    print("Agerage Time: {}s".format(round(sum([d[2] for d in data]/len(data)),4)))
+        print("")
+    print("Agerage Time: {}s".format(round(sum([d[2] for d in data])/len(data),4)))

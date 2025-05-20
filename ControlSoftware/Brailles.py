@@ -46,7 +46,7 @@ def convertBrailleToPositions(brailles: list) -> dict:
 
 
 def determineIndices(brailles:str,start_idx:int) -> tuple[int, int]:
-    MAXIMUM_LENGTH_FOR_ARRAY = 3  # maximum length of string to implement into the tactile array
+    MAXIMUM_LENGTH_FOR_ARRAY = min(len(brailles),3)  # maximum length of string to implement into the tactile array
     start_idx = start_idx if start_idx >= 0 else 0
     start_idx = min(len(brailles)-MAXIMUM_LENGTH_FOR_ARRAY,start_idx)
     end_idx = min(len(brailles),start_idx+MAXIMUM_LENGTH_FOR_ARRAY)
