@@ -56,13 +56,13 @@ def question(brailles):
     start_time = time.time()
     idx = 0
     positionsByBraille = Brailles.slicePosition(brailles,0)
-    positionsToFocus = [[pos[0] * 0.01,DIST,pos[1] * 0.01] for pos in positionsByBraille]  #[[x1,y1,z1], ... ]
+    positionsToFocus = [[(pos[0]-7.25) * 0.01,DIST,pos[1] * 0.01] for pos in positionsByBraille]  #[[x1,y1,z1], ... ]
 
     #positionsToFocus = [positionsToFocus[3]]
     print("\nBraille Table")
     sampleBrailles = list("⠀⠁⠂⠃⠄⠅⠆⠇⠈⠉⠊⠋⠌⠍⠎⠏⠐⠑⠒⠓⠔⠕⠖⠗⠘⠙⠚⠛⠜⠝⠞⠟⠠⠡⠢⠣⠤⠥⠦⠧⠨⠩⠪⠫⠬⠭⠮⠯⠰⠱⠲⠳⠴⠵⠶⠷⠸⠹⠺⠻⠼⠽⠾⠿")
     for i in range(len(sampleBrailles)):
-        print("{0:2d}:|{1}|".format(i, sampleBrailles[i]), end="  ")
+        print("{0:2d}:|{1}|".format(i, sampleBrailles[i]), end=" ")
         if i != 0 and i % 16 == 15: print("")
     print("=============")
     
@@ -81,7 +81,7 @@ def question(brailles):
             x = positionsToFocus[idx][0]
             y = positionsToFocus[idx][1]
             z = positionsToFocus[idx][2] + 0.005 * np.sin(angle)
-            #print(x, y, z)
+            print(x, y, z)
             array.focusAtPos(x,y,z)
             array.switchOnOrOff(False)
 
@@ -159,4 +159,7 @@ if __name__ == "__main__":
     for d in data:
         print("{}s".format(round(d[2],4)), end="  ")
         print("")
-    print("Agerage Time: {}s".format(round(sum([d[2] for d in data])/len(data),4)))
+    average = sum([d[2] for d in data])/len(data)
+    std_dev = pow(sum([pow(d[2]-average,2) for d in data])/len(data),1/2)
+    print("Agerage Time: {}s".format(round(average,4)))
+    print("Standard Deviation: {}s".format(round(std_dev,4)))
