@@ -81,7 +81,7 @@ def question(brailles):
             x = positionsToFocus[idx][0]
             y = positionsToFocus[idx][1]
             z = positionsToFocus[idx][2] + 0.005 * np.sin(angle)
-            print(x, y, z)
+            #print(x, y, z)
             array.focusAtPos(x,y,z)
             array.switchOnOrOff(False)
 
