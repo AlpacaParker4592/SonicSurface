@@ -7,8 +7,6 @@
 
 초음파를 이용하여 공중부양(levitation), 촉각 피드백(haptic feedback), 다이렉티브 오디오(directive audio) 등에 적용할 수 있는 오픈소스 트랜스듀서 어레이(transducer array) 제작 프로젝트
 
-Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
-
 ## 레포지토리 내 폴더 설명
 - Algorithms - Phase Delay 패턴 생성 알고리즘
 - ControlSoftware - 공중부양, 촉각 피드백(또는 소리 구현) 예시 구현 코드(Python)
@@ -84,3 +82,6 @@ Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
   ||지지대용 철제 구조물||(Instructable 제작 후기 참고)|
   ||기판 고정용 볼트 및 너트|||
 </details>
+
+## Original Github Repogitory
+[UPNA Lab/SonicSurface](https://github.com/upnalab/SonicSurface)
