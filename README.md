@@ -1,4 +1,10 @@
-# SonicSurface - 한국어 비공식 레포지토리
+# SonicSurface - Unofficial Korean Repository
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/39a10892-7c28-4502-96eb-c5c6ad4d1eeb">
+</p>
+
+
 초음파를 이용하여 공중부양(levitation), 촉각 피드백(haptic feedback), 다이렉티브 오디오(directive audio) 등에 적용할 수 있는 오픈소스 트랜스듀서 어레이(transducer array) 제작 프로젝트
 
 Original Github Repogitory: [Link](https://github.com/upnalab/SonicSurface)
