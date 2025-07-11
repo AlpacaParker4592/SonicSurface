@@ -5,8 +5,7 @@
   <img src="https://github.com/user-attachments/assets/e51a9abf-edb5-438b-a34b-bc5e354d25fc" width="40%">
 </p>
 
-- 비접촉식 저해상도 점자 시스템을 위한 초음파 어레이 기반 햅틱 장치 개발 프로젝트<br>
-  (Project about Developing an Ultrasonic Array-based Haptic Device for Contactless Low-resolution Braille Systems)
+- 비접촉식 저해상도 점자 시스템을 위한 초음파 어레이 기반 햅틱 장치 개발 프로젝트
 
 ## 레포지토리 내 폴더 설명
 - Algorithms - Phase Delay 패턴 생성 알고리즘
