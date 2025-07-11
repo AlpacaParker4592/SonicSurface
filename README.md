@@ -19,7 +19,7 @@
 - Wiki 탭의 [한국어 번역본](https://github.com/AlpacaParker4592/SonicSurface/wiki/%EC%96%B4%EB%A0%88%EC%9D%B4-%EC%A0%9C%EC%9E%91-%EB%B0%A9%EB%B2%95-(How-to-Make-a-Transducer-Array)) 참고
 
 ### 작동 방법
-- 어레이 제작 후 본 레포지토리의 `SonicSurface/ControlSoftware/Evaluation.py` 파일을 실행하세요.
+- 어레이 제작 및 연결 후 본 레포지토리의 `SonicSurface/ControlSoftware/Evaluation.py` 파일을 실행하세요.
   - 테스트 이전에 `SonicSurface/ControlSoftware/Python/TestOnOff.py` 파일을 실행하여 어레이가 잘 작동되는지 확힌하기 바랍니다.
 
 ## Original Github Repogitory
