@@ -21,7 +21,7 @@
 
 ## 어레이 제작 및 프로그램 작동 관련
 ### 어레이 조립 절차 및 팁
-- Wiki 탭의 [한국어 번역본](https://github.com/AlpacaParker4592/SonicSurface/wiki/%EC%96%B4%EB%A0%88%EC%9D%B4-%EC%A0%9C%EC%9E%91-%EB%B0%A9%EB%B2%95-(How-to-Make-a-Transducer-Array)) 참고
+- [Wiki 링크](https://github.com/AlpacaParker4592/SonicSurface/wiki) 참고
 
 ### 점자 시스템 작동 방법
 - 어레이 제작 및 연결 후 본 레포지토리의 `SonicSurface/ControlSoftware/Evaluation.py` 파일을 실행하세요.
