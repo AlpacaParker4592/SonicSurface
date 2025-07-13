@@ -12,11 +12,12 @@
 - SonicSurface 제작 및 활용 관련 레포지토리
 
 ## 레포지토리 내 폴더 설명
-- Algorithms - Phase Delay 패턴 생성 알고리즘
-- ControlSoftware - 공중부양, 촉각 피드백(또는 소리 구현) 예시 구현 코드(Python)
-- Electronics - PCB gerber 파일
-- Firmware - FPGA 보드에 업로드할 코드
-- Mech - 스페이서(Spacer), 지지대 등 3D 프린팅하거나 레이저 커팅할 보조 파츠
+- [`Algorithms`](https://github.com/AlpacaParker4592/SonicSurface/tree/main/Algorithms) - Phase Delay 패턴 생성 알고리즘
+- [`ControlSoftware`](https://github.com/AlpacaParker4592/SonicSurface/tree/main/ControlSoftware) - 공중부양, 촉각 피드백(또는 소리 구현) 예시 구현 코드(Python)
+- [`Electronics`](https://github.com/AlpacaParker4592/SonicSurface/tree/main/Electronics) - PCB gerber 파일
+- [`Firmware`](https://github.com/AlpacaParker4592/SonicSurface/tree/main/Firmware) - FPGA 보드에 업로드할 코드
+- [`Mech`](https://github.com/AlpacaParker4592/SonicSurface/tree/main/Mech) - 스페이서(Spacer), 지지대 등 3D 프린팅하거나 레이저 커팅할 보조 파츠
+- [`Simulations`](https://github.com/AlpacaParker4592/SonicSurface/tree/main/Simulations) - 단일/이중 어레이 시뮬레이션(Apache NetBeans 및 Ultraino 소프트웨어 전용)
 
 ## 어레이 제작 및 프로그램 작동 관련
 ### 어레이 조립 절차 및 팁
