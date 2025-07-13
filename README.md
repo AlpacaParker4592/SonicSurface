@@ -24,11 +24,11 @@
 - [Wiki 링크](https://github.com/AlpacaParker4592/SonicSurface/wiki) 참고
 
 ### 점자 시스템 작동 방법
-- 어레이 제작 및 연결 후 본 레포지토리의 `SonicSurface/ControlSoftware/Evaluation.py` 파일을 실행하세요.
-  - 테스트 이전에 `SonicSurface/ControlSoftware/Python/TestOnOff.py` 파일을 실행하여 어레이가 잘 작동되는지 확힌하길 바랍니다.
+- 어레이 제작 및 연결 후 본 레포지토리의 [`Evaluation.py`](https://github.com/AlpacaParker4592/SonicSurface/ControlSoftware/Evaluation.py) 파일을 실행하세요.
+  - 테스트 이전에 [`TestOnOff.py`](https://github.com/AlpacaParker4592/SonicSurface/ControlSoftware/Python/TestOnOff.py) 파일을 실행하여 어레이가 잘 작동되는지 확힌하길 바랍니다.
 
 ### 이외 파티클 공중부양, 햅틱 센세이션 예시 코드
-- 어레이 제작 및 연결 후 `https://github.com/AlpacaParker4592/SonicSurface/tree/main/ControlSoftware/Python` 폴더 내 파일을 실행하세요.
+- 어레이 제작 및 연결 후 [ControlSoftware 내 Python 폴더](https://github.com/AlpacaParker4592/SonicSurface/tree/main/ControlSoftware/Python) 내 파일을 실행하세요.
 
 ## Original Github Repogitory
 [UPNA Lab/SonicSurface](https://github.com/upnalab/SonicSurface)
