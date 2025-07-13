@@ -1,4 +1,4 @@
-# 비접촉식 저해상도 점자 시스템을 위한 초음파 어레이 기반 햅틱 장치 개발 프로젝트
+# 비접촉식 저해상도 점자 시스템을 위한 초음파 어레이 기반 햅틱 디바이스 개발 프로젝트
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/39a10892-7c28-4502-96eb-c5c6ad4d1eeb" width="40%">
@@ -18,9 +18,12 @@
 ### 어레이 조립 절차 및 팁
 - Wiki 탭의 [한국어 번역본](https://github.com/AlpacaParker4592/SonicSurface/wiki/%EC%96%B4%EB%A0%88%EC%9D%B4-%EC%A0%9C%EC%9E%91-%EB%B0%A9%EB%B2%95-(How-to-Make-a-Transducer-Array)) 참고
 
-### 작동 방법
+### 점자 시스템 작동 방법
 - 어레이 제작 및 연결 후 본 레포지토리의 `SonicSurface/ControlSoftware/Evaluation.py` 파일을 실행하세요.
   - 테스트 이전에 `SonicSurface/ControlSoftware/Python/TestOnOff.py` 파일을 실행하여 어레이가 잘 작동되는지 확힌하길 바랍니다.
+
+### 이외 파티클 공중부양, 햅틱 센세이션 예시 코드
+- 어레이 제작 및 연결 후 `https://github.com/AlpacaParker4592/SonicSurface/tree/main/ControlSoftware/Python` 폴더 내 파일을 실행하세요.
 
 ## Original Github Repogitory
 [UPNA Lab/SonicSurface](https://github.com/upnalab/SonicSurface)
