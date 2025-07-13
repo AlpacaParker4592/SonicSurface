@@ -1,6 +1,10 @@
 # 비접촉식 저해상도 점자 시스템을 위한 초음파 어레이 기반 햅틱 디바이스 개발 프로젝트
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Python-3.13.2-3766AB?style=flat&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/build-passing-green?style=flat"/>
+</p>
+
+<p align="center">
   <img src="https://github.com/user-attachments/assets/39a10892-7c28-4502-96eb-c5c6ad4d1eeb" width="40%">
   <img src="https://github.com/user-attachments/assets/e51a9abf-edb5-438b-a34b-bc5e354d25fc" width="40%">
 </p>
